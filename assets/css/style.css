@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+
+
+nav {
+    grid-area: navegacion;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.icon {
+    display: flex;
+}
+
+nav img {
+    width: 85px;
+    margin: 5px;
+    padding-left: 1em;
+}
+
+
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+    font-family: cursive;
+    font-size: 22px;
+    background: linear-gradient(to top, red, gold);
+    background-clip: text;
+    color: transparent;
+}
+
+
+.hamburguesa-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 4.5em;
+    padding-top: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #ef6c0a;
+}
+
+.nav-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-categorias,
+ul {
+    display: none;
+}
+
+
+section {
+    grid-area: seccion;
+    padding: 10px;
+    background: linear-gradient(to top, #ef6c0a, rgb(255, 217, 0));
+    font-size: 18px;
+
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.gallery-card {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(to bottom, #1c1c1c, #1d1d1d);
+}
+
+.cards {
+    width: 230px; 
+    height: 450px; 
+    position: relative;
+    margin: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; 
+    overflow: visible;
+}
+
+.cards:hover .card-container {
+    transform: rotateY(180deg); 
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #1c1c1c, #1d1d1d);
+}
+
+.card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ec540e; 
+    color: white; 
+    transform: rotateY(180deg); 
+    text-align: center;
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.content img {
+    width: 230px;
+    height: 350px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px 0px #fa844d52;
+}
+
+.cards p {
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.btn-card {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+.btn-card {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+    padding-bottom: 10px;
+    padding-top: 3em; 
+}
+
+.btn {
+    background: #ec540e;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 15px 0px #ff510052;
+    padding: 10px 40px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.btn:hover {
+    box-shadow: none;
+    opacity: 80%;
+}
+
+
+
+.murcielago {
+    position: absolute; 
+    animation: volar 10s linear infinite; 
+}
+
+.murcielago img {
+    width: 50px; 
+    height: 50px; 
+    display: block; 
+}
+
+
+@keyframes volar {
+    0% { transform: translate(0, 0); } 
+    50% { transform: translate(50px, 30px); } 
+    100% { transform: translate(0, 0); } 
+}
+
+
+.murcielago-1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.murcielago-2 {
+    top: 10%;
+    left: 70%;
+    animation-delay: 1s;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: #ef6c0a;
+    padding: 5px;
+}
+
+.rrss-icon {
+    text-align: center;
+    padding-top: 3px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+
+.btn-navegacion{
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    
+}
+
+.btn-navegacion button{
+    width: 35px;
+    height: 40px;
+    background-color: #1c1c1c;
+    color: chocolate;
+    border: 1px solid #3a3939;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.button-navegacion:hover{
+    background-color: orange;
+}

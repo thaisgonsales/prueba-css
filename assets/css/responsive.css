@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+nav{
+    grid-area: navegacion;
+}
+
+section{
+    grid-area: seccion;
+}
+
+main{
+    grid-area: principal;
+}
+
+footer{
+    grid-area: pie;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-rows: 80px 1fr 15fr 105px;
+        grid-template-areas: 
+            'navegacion seccion'
+            'navegacion principal'
+            'navegacion principal'
+            'pie principal';
+        grid-template-columns: 2fr 12fr;
+    }
+
+    .hamburguesa-menu{
+        display: none;
+    }
+
+    h3{
+        padding:0;
+    }
+
+    nav img{
+        padding: 0;
+    }
+
+    nav{
+        width: 300px;
+        padding: 10px;
+    }
+
+    .nav-categorias, ul{
+        display: block;
+        
+    }
+
+    .nav-categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+        
+    }
+
+    .nav-categorias ol{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+
+    .gallery-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 8em;
+        padding-top: 2em;
+    }
+
+    a{
+        color: chocolate;
+        text-decoration: none;
+    }
+
+    .btn-navegacion{
+        background-color: #1c1c1c;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        
+    }
+    
+    .btn-navegacion button{
+        width: 35px;
+        height: 40px;
+        background-color: #1c1c1c;
+        color: chocolate;
+        border: 1px solid #3a3939;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .button-navegacion:hover{
+        background-color: orange;
+    }
+
+    .murcielago {
+        position: absolute; 
+        animation: volar 10s linear infinite; 
+    }
+    
+    .murcielago img {
+        width: 50px; 
+        height: 50px; 
+        display: block; 
+    }
+    
+    
+    @keyframes volar {
+        0% { transform: translate(0, 0); } 
+        50% { transform: translate(50px, 30px); } 
+        100% { transform: translate(0, 0); } 
+    }
+    
+    
+    .murcielago-1 {
+        top: 2%;
+        left: 20%;
+        animation-delay: 0s;
+    }
+    
+    .murcielago-2 {
+        top: 2%;
+        left: 70%;
+        animation-delay: 1s;
+    }
+    
+    
+}
+
+@media(min-width:992px){
+    .container {
+        display: grid;
+        grid-template-rows: 80px 1fr 15fr 105px;
+        grid-template-areas: 
+            'navegacion seccion'
+            'navegacion principal'
+            'navegacion principal'
+            'pie principal';
+        grid-template-columns: 2fr 12fr;
+    }
+
+    .hamburguesa-menu{
+        display: none;
+    }
+
+    h3{
+        background-color: aqua;
+    }
+
+    nav{
+        width: 300px;
+        padding: 10px;
+    }
+
+    .nav-categorias, ul{
+        display: block;
+        
+    }
+
+    .nav-categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+        
+    }
+
+    .nav-categorias ol{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+
+    a{
+        color: chocolate;
+        text-decoration: none;
+    }
+
+    .btn-navegacion{
+        background-color: #1c1c1c;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        
+    }
+    
+    .btn-navegacion button{
+        width: 35px;
+        height: 40px;
+        background-color: #1c1c1c;
+        color: chocolate;
+        border: 1px solid #3a3939;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .button-navegacion:hover{
+        background-color: orange;
+    }
+
+    .murcielago {
+        position: absolute; 
+        animation: volar 10s linear infinite; 
+    }
+    
+    .murcielago img {
+        width: 50px; 
+        height: 50px; 
+        display: block; 
+    }
+    
+    
+    @keyframes volar {
+        0% { transform: translate(0, 0); } 
+        50% { transform: translate(50px, 30px); } 
+        100% { transform: translate(0, 0); } 
+    }
+    
+    
+    .murcielago-1 {
+        top: 1%;
+        left: 30%;
+        animation-delay: 0s;
+    }
+    
+    .murcielago-2 {
+        top: 2%;
+        left: 70%;
+        animation-delay: 1s;
+    }
+
+}
+
+@media(min-width: 768px){
+
+    .container-icon{
+        display: flex;
+    }
+
+
+
+
+    .btn-navegacion{
+        background-color: #1c1c1c;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        
+    }
+    
+    .btn-navegacion button{
+        width: 35px;
+        height: 40px;
+        background-color: #1c1c1c;
+        color: chocolate;
+        border: 1px solid #3a3939;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .button-navegacion:hover{
+        background-color: orange;
+    }
+}
+
+
+
